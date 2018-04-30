@@ -1,0 +1,17 @@
+<div class="post-nav">
+  <div class="post-nav-item post-nav-prev">
+  {{ if .Prev }}
+    <span>〈 </span>
+    <a href="{{ .Prev.Permalink }}" rel="prev" title="{{ .Prev.Title }}">
+      {{ .Prev.Title }}
+   </a>
+  {{ end }}
+  </div>
+
+  <div class="post-nav-item post-nav-next">
+  {{ if .Next }}
+    <a href="{{ .Next.Permalink }}" rel="next" title="{{ .Next.Title }}"> {{ .Next.Title }} </a>
+    <span>  〉</span>
+  {{ end }}
+  </div>
+</div>

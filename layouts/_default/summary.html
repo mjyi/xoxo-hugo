@@ -1,0 +1,23 @@
+<article class="recent-post-item">
+  <a class="title" href="{{ .Permalink }}">
+    <h2>{{ .Title }}</h2>
+  </a>
+  <div class="post-meta">
+    <time class="time" datetime="{{ .Date }}">
+       {{ .Date.Format "Jan 2, 2006" }}
+    </time>
+    <span class="slash">/</span>
+    <ul class="index-tag-list">
+    {{ range .Params.tags }}
+    <li class="index-tag-list-item">
+      <a class="index-tag-list-link" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+    </li>
+    {{ end }}
+    </ul>
+  </div>
+  <div class="post-excerpt">
+    {{ .Summary }}
+  </div>
+  <!-- This <div> includes a read more link, but only if the summary is truncated... Truncated -->
+  <a class="more" href="{{ .RelPermalink }}"> 阅读全文〉</a>
+</article>

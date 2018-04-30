@@ -1,0 +1,19 @@
+<footer class="footer text-center">
+  <div id="bottom-inner">
+    {{ $length := len .Site.Params.links }}
+    {{ range $index, $element := .Site.Params.links -}}
+    <a class="bottom-item" href="{{ index $element "url" }}">{{ index $element "name" }} </a> 
+    {{ if ne $index (sub $length 1) }} | {{ end }}
+    {{- end }}
+    | 
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+  </div>
+
+</footer>
+
+{{ if .Site.GoogleAnalytics }}
+{{ template "_internal/google_analytics.html" . }}
+{{ end }}
+
+</body>
+</html>

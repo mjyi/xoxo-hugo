@@ -1,0 +1,12 @@
+{{ partial "header.html" . }}
+<div class="recent-posts">
+
+{{ range first 10 .Data.Pages }}
+  {{ .Render "summary"}}
+{{ end }}
+
+</div>
+</div>
+</div>
+
+{{ partial "footer.html" . }}

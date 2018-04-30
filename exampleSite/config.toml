@@ -8,6 +8,10 @@ disqusShortname = ""
 
 # Set the value to true if your site include CJK (Chinese, Japanese, and Korean languages) characters
 hasCJKLanguage = true
+ 
+pygmentsUseClasses=true
+pygmentsCodefences=true
+pygmentsStyle='manni'
 
 # configuration for theme xoxo-hugo
 [params]

@@ -31,15 +31,16 @@
     </div>
   </article>
 
-<!-- toc temp -->
+
+  {{ if .Params.Toc }}
   <div class="toc-container">
   <div id="toc" class="toc-article">
     <strong class="toc-title">目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#安装"><span class="toc-text">安装</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#配置编辑器"><span class="toc-text">配置编辑器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#命令行工具"><span class="toc-text">命令行工具</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#elm-repl"><span class="toc-text">elm-repl</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#elm-reactor"><span class="toc-text">elm-reactor</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#elm-make"><span class="toc-text">elm-make</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#elm-package"><span class="toc-text">elm-package</span></a></li></ol></li></ol></li></ol>
+    {{ .TableOfContents }}
   </div>
   </div>
-
-<!-- toc --> 
+  {{ end }}
+ 
 </div>
 {{ partial "widgets/nav-page.html" . }}
 {{ partial "widgets/disqus.html" . }}

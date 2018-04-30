@@ -7,5 +7,5 @@ see /exampleSite/config.toml
 
 ## TODO
 
-- Syntax highlight
+- [x] Syntax highlight
 

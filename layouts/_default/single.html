@@ -7,8 +7,8 @@
       <h1 class="title">{{ .Title }}</h1>
       <span>
         <time class="time" datetime="{{ .Date }}"> {{ .Date.Format "2006-1-2" }} </time>
-      </span>
-      <span class="slash">/</span>
+      </span> 
+      {{ if .Params.tags }} <span class="slash">/</span> {{ end }}
       <span class="post-meta">
         <span class="post-tags">
           <ul class="article-tag-list">

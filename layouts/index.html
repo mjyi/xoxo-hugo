@@ -1,4 +1,4 @@
-{{ partial "header.html" . }}
+{{ define "main" }}
 <div class="recent-posts">
 
 {{ range first 10 .Data.Pages }}
@@ -6,7 +6,5 @@
 {{ end }}
 
 </div>
-</div>
-</div>
+{{ end }}
 
-{{ partial "footer.html" . }}

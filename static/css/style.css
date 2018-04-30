@@ -652,6 +652,11 @@ body {
 .page ul {
   padding-left: 0px;
 }
+
+.tag-list {
+  text-align: center;
+}
+
 .page .tag-list .tag-list-item {
   line-height: 20px;
   display: inline-block;

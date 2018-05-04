@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="recent-posts">
 
-{{ range first 10 .Data.Pages }}
+{{ range .Data.Pages }}
   {{ .Render "summary"}}
 {{ end }}
 

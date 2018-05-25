@@ -3,7 +3,7 @@
 a simple hugo theme ported from
 [hexo-theme-xoxo](https://github.com/KevinOfNeu/hexo-theme-xoxo)
 
-## Cinfiguration 
+## Configuration 
 
 see /exampleSite/config.toml
 
